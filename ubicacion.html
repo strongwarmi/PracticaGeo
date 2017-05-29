@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="es">
+	<head>
+		<title>Lyft</title>
+		<link rel="shortcut icon" href="img/lyft.ico">
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
+		<link rel="stylesheet" href="css/bootstrap.css">
+		<link rel="stylesheet" href="css/main.css">
+		<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+	</head>
+	<body>
+		<ul id="slide-out" class="side-nav">
+			<li>
+				<div class="userView">
+					<img class="background" src="img/paris.jpg">
+					<img class="circle">
+					<a id="editar-perfil" href="editar-perfil.html">Edita tu perfil</a>
+					<div class="white-text name"></div>
+					<div class="white-text email"></div>
+				</div>
+			</li>
+			<li class="opciones-slide">
+				<i class="glyphicon glyphicon-home icono-slide"></i>
+				<a href="#" class="link-slide">Home</a>
+			</li>
+			<li class="opciones-slide">
+				<i class="glyphicon glyphicon-heart icono-slide"></i>
+				<a href="#" class="link-slide">Free Rides</a>
+			</li>
+			<li class="opciones-slide">
+				<i class="glyphicon glyphicon-map-marker icono-slide"></i>
+				<a href="#" class="link-slide">Ride history</a>
+			</li>
+			<li class="opciones-slide">
+				<i class="glyphicon glyphicon-credit-card icono-slide"></i>
+				<a href="#" class="link-slide">Payment</a>
+			</li>
+		</ul>
+		<a href="#" data-activates="slide-out" class="button-collapse"><img src="img/user.png" id="usuario"></a>
+		<div id="map"></div>
+		<div id="direccion"></div>
+		<div class="input-group direccion">
+			<textarea id="direccion-cambiar" class="form-control text-center"></textarea>
+			<div class="input-group-btn">
+				<i id="buscar" class="btn btn-default ubicacion-icono glyphicon glyphicon-map-marker"></button>
+			</i>
+		</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+		<script src="js/bootstrap.js"></script>
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCTaOa4Xk8WBSq5zXtC5C84rhF6YSRki6k" async defer></script>
+		<script src="js/gmaps.js"></script>
+		<script src="js/geolocalizacion.js"></script>
+		<script src="js/general.js"></script>
+	</body>
+</html>

@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="es">
+	<head>
+		<title>Lyft</title>
+		<link rel="shortcut icon" href="img/lyft.ico">
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="css/bootstrap.css">
+		<link rel="stylesheet" href="css/main.css">
+		<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+	</head>
+	<body>
+		<nav class="navbar navbar-default navbar-registro">
+		  <div class="container-fluid">
+			<div class="navbar-header">
+				<a class="navbar-brand btn-volver" href="index.html">
+					<i class="glyphicon glyphicon-menu-left"></i>
+				</a>
+				<p class="navbar-text titulo-registro"><b>Sign up</b></p>
+				<p>Join now for free ride credit</p>
+			</div>
+		  </div>
+		</nav>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+					<div class="input-group">
+						<div class="input-group-btn">
+							<button type="button" class="btn btn-default dropdown-toggle subir-capa" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="img/bandera.png"> <span class="caret"></span></button>
+							<button type="button" class="btn btn-default subir-capa" id="cincuenta-y-uno">+51</button>
+							<ul class="dropdown-menu">
+								<li><a href="#">EEUU</a></li>
+								<li><a href="#">Spain</a></li>
+								<li><a href="#">England</a></li>
+							</ul>
+						</div><!-- /btn-group -->
+						<input id="input-celular" type="tel" class="form-control" maxlength="9" placeholder="123456789">
+					</div><!-- /input-group -->
+				</div><!-- /.col-lg-6 -->
+			</div><!-- /.row -->
+			<div class="ocultar cuadrado-negro" id="cuadrado-negro"></div>
+			<a id="obtener-codigo"><button class="btn btn-default btn-lg btn-siguiente">Next</button></a>
+		</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script src="js/bootstrap.js"></script>
+		<script type="text/javascript" src="js/general.js"></script>
+	</body>
+</html>

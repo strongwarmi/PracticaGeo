@@ -1,0 +1,34 @@
+var telefono =document.getElementById("input-phone");
+telefono.onblur=function(){
+	var regexNumeros = /9[0-9]{8}$/;
+	if(regexNumeros.test(this.value) && this.value.length!==0){
+		this.classList.remove("equis")
+	}
+	else{
+		this.classList.add("equis")
+	}
+}
+var email =document.getElementById("input-email");
+email.onblur=function(){
+	var regexCorreo = (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,4})+$/);
+	if(regexCorreo.test(this.value) && this.value.length!==0){
+		this.classList.remove("equis")
+	}
+	else{
+		this.classList.add("equis")
+	}
+}
+var soloLetras = function(){
+	var regexLetras=/[A-Z]{1}[a-z]+$/;
+	if(regexLetras.test(this.value) && this.value.length!==0){
+		this.classList.remove("equis")
+
+	}
+	else{
+		this.classList.add("equis")
+	}
+}
+var nombre = document.getElementById("input-name");
+nombre.onblur=soloLetras;
+var ciudad = document.getElementById("input-ciudad");
+ciudad.onblur=soloLetras;
